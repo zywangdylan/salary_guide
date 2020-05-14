@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <title>How much can I make?</title>
   <link rel="stylesheet" href="style.css">
+  <script src="utils/sdk-web.3.12.0.js"></script>
 </head>
 <body>
   <div class="header">
@@ -11,48 +12,51 @@
   <div class="report">
     <!-- A single table -->
     <!-- This `div` tag should always have id of 'what-kind-of-jobs city' based on the Michael Page report -->
-    <div id="data-ai-jobs shanghai">
-      <h3 class="table-name">Data and Artificial Intelligence (AI) Jobs</h3>
-      <table>
-        <!-- Table headline row -->
-        <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
-        </tr>
-        <!-- A single role -->
-        <tr>
-          <!-- A role can be junior (Non-managerial positions), manager or director (Director and above) -->
-          <td class='role junior'>Data Analyst</td>
-          <!-- minimum salary from report -->
-          <td class='min'>300</td>
-          <!-- median salary -->
-          <td class='med'>400</td>
-          <!-- top salary -->
-          <td class='max'>550</td>
-        </tr>
-        <!-- A single role -->
-        <tr>
-          <td class='role manager'>Data Analytics Manager</td>
-          <td class='min'>400</td>
-          <td class='med'>600</td>
-          <td class='max'>800</td>
-        </tr>
-        <!-- A single role -->
-        <tr>
-          <td class='role director'>Data Analytics Director</td>
-          <td class='min'>700</td>
-          <td class='med'>900</td>
-          <td class='max'>1500</td>
-        </tr>
-        <!-- New role goes here -->
-      </table>
+    <div class="shanghai">
+      <div hidden id="data-ai-jobs">
+        <h3 class="table-name">Data and Artificial Intelligence (AI) Jobs</h3>
+        <table>
+          <!-- Table headline row -->
+          <tr class='head-row'>
+            <th>Role</th>
+            <th>Junior</th>
+            <th>Experienced</th>
+            <th>Veteran</th>
+          </tr>
+          <!-- A single role -->
+          <tr>
+            <!-- A role can be junior (Non-managerial positions), manager or director (Director and above) -->
+            <td class='role junior'>Data Analyst</td>
+            <!-- minimum salary from report -->
+            <td class='min'>300</td>
+            <!-- median salary -->
+            <td class='med'>400</td>
+            <!-- top salary -->
+            <td class='max'>550</td>
+          </tr>
+          <!-- A single role -->
+          <tr>
+            <td class='role manager'>Data Analytics Manager</td>
+            <td class='min'>400</td>
+            <td class='med'>600</td>
+            <td class='max'>800</td>
+          </tr>
+          <!-- A single role -->
+          <tr>
+            <td class='role director'>Data Analytics Director</td>
+            <td class='min'>700</td>
+            <td class='med'>900</td>
+            <td class='max'>1500</td>
+          </tr>
+          <!-- New role goes here -->
+        </table>
+      </div>
     </div>
     <!-- New table goes here -->
   </div>
   <div class="footer">
 
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
