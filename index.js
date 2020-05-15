@@ -32,11 +32,9 @@ let Submissions = new BaaS.TableObject('submissions')
   let record = await getRecord()
   let entry = record.data
   if (entry) {
-    console.log(entry)
     entry.cities.forEach(city => {
       entry.sectors.forEach(s => {
       table = document.querySelector(`.${city} #${SectorsMap[s]}`)
-      console.log(s)
       if (table) {
         table.hidden = false
       }
