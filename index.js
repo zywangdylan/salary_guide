@@ -1,7 +1,7 @@
 const BaaS = window.BaaS
 BaaS.init('69971365ede01a812c8a')
 const SectorsMap = {
-  "Data and AI": "data-ai-jobs",
+  "Data & AI": "data-ai-jobs",
   "Web Building": "web-building-jobs",
   "General IT & Project Management": "it-general-pm-jobs",
   "IT Security": "security-jobs",
