@@ -33,6 +33,7 @@ let Submissions = new BaaS.TableObject('submissions')
   let entry = record.data
   if (entry) {
     console.log(entry)
+    document.querySelector('#user-name').innerText = entry.name
     entry.cities.forEach(city => {
       document.querySelector(`#${city.toLowerCase()}`).hidden = false
       entry.sectors.forEach(s => {

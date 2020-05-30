@@ -41,21 +41,32 @@ body {
   width: 90%;
 }
 
+.intro h3 {
+  font-size: 45px;
+  font-family: 'Circular Std', 'Helvetica';
+}
+
+.intro p {
+  font-size: 30px;
+  font-family: 'Helvetica';
+}
+
 .intro #user-name {
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
-
+/*Styling header*/
 
 /*Styling tables*/
 .report {
   background-color: #62DDF5;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .container-sm {
+  max-width: 85vw !important;
   padding: 30px 20px;
-  margin-top: 20px;
+  margin: 20px auto;
   background-color: #E8FAFE;
   border-radius: 5px;
 }
@@ -74,7 +85,7 @@ table {
 th {
   /*background-color: #62DDF5;*/
   border: none;
-  /*padding: 3px 10px;*/
+  padding: 15px 0px;
   text-align: left;
   height: 35px;
 }
@@ -82,26 +93,37 @@ th {
 th span {
   background-color: #62DDF5;
   padding: 10px 15px;
-  margin: 5px 3px;
+  margin: 0px 5px;
   border-radius: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Helvetica'
+}
+
+.report h2 {
+  font-size: 45px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
 
 #shanghai h5 {
+  font-size: 30px;
   font-style: italic;
 }
 
 #chengdu h5 {
+  font-size: 30px;
   font-style: italic;
 }
 
 #shenzhen h5 {
+  font-size: 30px;
   font-style: italic;
 }
 
 .table-name {
   margin-bottom: 15px;
+  font-size: 45px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
@@ -109,6 +131,9 @@ th span {
 
 /*Table rows styling*/
 td {
+  font-size: 30px;
+  font-family: 'Helvetica'
+  line-height: 150%;
   padding: 12px 0px;
   text-align: left;
   height: 35px;
@@ -150,12 +175,13 @@ td+td {
 }
 
 .prompt {
-  padding: 20px 30%;
+  padding: 20px 15%;
   text-align: center;
 }
 
 .prompt h4 {
   margin-bottom: 0;
+  font-size: 35px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
@@ -168,16 +194,19 @@ td+td {
 
 /*Bootcamp cards styling*/
 .bootcamp {
-  margin: 30px 25%;
+  margin: 30px 15%;
 }
 
 .bootcamp .title {
   text-align: center;
   font-weight: bold;
+  font-size: 45px;
   font-family: 'Circular Std', 'Helvetica';
 }
 
 .bootcamp .subtitle {
+  font-size: 30px;
+  font-weight: bold;
   color: gray;
   text-align: center;
   font-family: 'Circular Std', 'Helvetica';
@@ -185,31 +214,34 @@ td+td {
 
 .card {
   margin-top: 15px;
-  padding: 20px 5%;
+  padding: 30px 5%;
   text-align: center;
 }
 
 .card .date {
+  font-size: 45px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
 
 .card .schedule {
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
   margin-bottom: 20px;
 }
 
 .card .description {
-  font-size: 20px;
+  font-size: 30px;
   text-align: justify !important;
 }
 
 .card .cta {
+  border-radius: 5px;
   background-color: #FD1015;
   padding: 10px 0px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
@@ -220,12 +252,13 @@ td+td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 50px;
 }
 
 .remote h3 {
+  font-size: 45px;
   text-align: center;
   width: 80%;
   padding: 10px 20px;
@@ -239,11 +272,13 @@ td+td {
 }
 
 .remote .subtitle {
+  font-size: 40px;
+  font-family: 'Circular Std', 'Helvetica';
   text-align: center;
   width: 80%;
   background-color: transparent;
   color: black;
-  margin-top: 0;
+  margin-top: 10px;
 
 }
 
@@ -252,14 +287,16 @@ td+td {
   width: 100%;
   text-align: justify;
   font-size: 20px;
+  font-size: 30px;
+  font-family: 'Helvetica'
 }
 /*Remote option section*/
 
 /*About section*/
 .about {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -267,21 +304,22 @@ td+td {
 }
 
 .about #logo {
-  width: 30%;
+  width: 40%;
   height: auto;
   margin-bottom: 20px;
   margin-top: 50px;
 }
 
 .about #lewagon {
-  width: 30%;
+  width: 40%;
 }
 
 .about p {
-  width: 70%;
+  /*width: 150%;*/
   margin: 10px auto;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Helvetica';
 }
 
 .about #qr {
@@ -289,9 +327,9 @@ td+td {
 }
 
 .about .motto {
-  width: 90%;
+  /*width: 150%;*/
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   padding: 80px 0;
   font-family: 'Circular Std', 'Helvetica';
