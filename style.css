@@ -31,10 +31,13 @@ body {
   font-weight: bold;
 }
 
+.graphic {
+  text-align: center;
+}
+
 .graphic img {
   height: auto;
-  width: 100%;
-  padding: 80px 80px;
+  width: 90%;
 }
 
 .intro #user-name {
@@ -169,6 +172,7 @@ td+td {
 }
 /*Bootcamp cards styling*/
 
+/*Remote option section*/
 .remote {
   display: flex;
   flex-direction: column;
@@ -202,3 +206,46 @@ td+td {
   width: 100%;
   text-align: justify;
 }
+/*Remote option section*/
+
+/*About section*/
+.about {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.about #logo {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.about #lewagon {
+  width: 30%;
+}
+
+.about p {
+  width: 70%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.about #qr {
+  width: 50%;
+}
+
+.about .motto {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 80px 0;
+
+}
+/*About section*/
