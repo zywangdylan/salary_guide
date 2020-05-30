@@ -48,3 +48,9 @@ let Submissions = new BaaS.TableObject('submissions')
 }
 
 getData()
+
+window.addEventListener('scroll', e => {
+  let scrolled = window.pageYOffset
+  const bg = document.querySelector('.bg')
+  bg.style.top = - (scrolled * 0.4)
+})
