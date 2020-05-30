@@ -1,4 +1,204 @@
-table, th, td {
-  border-collapse: collapse;
-  border: 1px solid black;
+body {
+  background-color: #62DDF5;
+}
+
+/*Styling header*/
+.header {
+  background-color: #62DDF5;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.logo img {
+  padding: 20px 20px;
+  width: auto;
+  height: 100px;
+}
+
+.headline {
+  text-align: center;
+  width: 70%;
+}
+
+.headline h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.graphic img {
+  height: auto;
+  width: 100%;
+  padding: 80px 80px;
+}
+
+.intro #user-name {
+  font-weight: bolder;
+}
+
+
+/*Styling tables*/
+.report {
+  background-color: #62DDF5;
+  padding-bottom: 40px;
+}
+
+.container-sm {
+  padding: 30px 20px;
+  margin-top: 20px;
+  background-color: #E8FAFE;
+  border-radius: 5px;
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
+table {
+  width: 100%;
+  display: table;
+  /*table-layout: fixed;*/
+}
+
+/*Table header styling*/
+th {
+  /*background-color: #62DDF5;*/
+  border: none;
+  /*padding: 3px 10px;*/
+  text-align: left;
+  height: 35px;
+}
+
+th span {
+  background-color: #62DDF5;
+  padding: 10px 15px;
+  margin: 5px 3px;
+  border-radius: 5px;
+}
+
+#shanghai h5 {
+  font-style: italic;
+}
+
+#chengdu h5 {
+  font-style: italic;
+}
+
+#shenzhen h5 {
+  font-style: italic;
+}
+
+.table-name {
+  margin-bottom: 15px;
+}
+/*Table header styling*/
+
+/*Table rows styling*/
+td {
+  padding: 12px 0px;
+  text-align: left;
+  height: 35px;
+  width: 65%;
+  border-bottom: 1px solid #62DDF5;
+}
+
+td+td {
+  width: auto;
+}
+
+.min, .med, .max {
+  text-align: center;
+}
+/*Table rows styling*/
+
+/*Footer styling*/
+.footer {
+  background-color: white;
+  padding-top: 30px;
+}
+
+.prompt {
+  padding: 20px 30%;
+  text-align: center;
+}
+
+.prompt h4 {
+  margin-bottom: 0;
+}
+
+/*Bootcamp cards styling*/
+.bootcamp {
+  margin: 30px 25%;
+}
+
+.bootcamp .title {
+  text-align: center;
+
+}
+
+.bootcamp .subtitle {
+  color: gray;
+  text-align: center;
+}
+
+.card {
+  margin-top: 15px;
+  padding: 20px 5%;
+  text-align: center;
+}
+
+.card .schedule {
+  margin-bottom: 20px;
+}
+
+.card .description {
+  text-align: justify !important;
+}
+
+.card .cta {
+  background-color: #FD1015;
+  padding: 10px 0px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*Bootcamp cards styling*/
+
+.remote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.remote h3 {
+  text-align: center;
+  width: 80%;
+  padding: 10px 20px;
+  background-color: #ffe0e1;
+  color: #fd1015;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.remote .subtitle {
+  text-align: center;
+  width: 80%;
+  background-color: transparent;
+  color: black;
+  margin-top: 0;
+}
+
+.remote .description {
+  margin-top: 10px;
+  width: 100%;
+  text-align: justify;
 }

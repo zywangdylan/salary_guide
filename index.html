@@ -2,27 +2,43 @@
 <head>
   <meta charset="UTF-8">
   <title>How much can I make?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="utils/sdk-web.3.12.0.js"></script>
 </head>
 <body>
   <div class="header">
-
+    <div class="logo">
+      <img src="images/le-wagon-neg-white.png">
+    </div>
+    <div class="headline">
+      <h1>How much can I make?</h1>
+    </div>
+    <div class="graphic">
+      <img src="images/working_man.png">
+    </div>
+    <div class="container-sm no-bg intro">
+      <h3>Hey <span id='user-name'>Tiantian</span>!</h3>
+      <p>According to our super mega secret algorithm that borrows data from Michael Page, these are your salary possibilities:</p>
+    </div>
   </div>
   <div class="report">
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hidden hiddencity' based on the Michael Page report -->
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hidden class='container-sm'hiddencity' based on the Michael Page report -->
     <div class="shanghai">
-      <h2 hidden id="shanghai">Shanghai</h2>
-      <div id="data-ai-jobs" hidden>
+      <div class='container-sm no-bg'hidden id="shanghai">
+        <h2>Shanghai</h2>
+        <h5>Base salary range for 12 months (RMB'000)</h5>
+      </div>
+      <div id="data-ai-jobs" class='container-sm'hidden>
         <h3 class="table-name">Data and Artificial Intelligence (AI) Jobs</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -166,16 +182,16 @@
       </div>
     <!-- New table goes here -->
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="web-building-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="web-building-jobs" class='container-sm'hidden>
         <h3 class="table-name">Web Building</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -235,16 +251,16 @@
 
     <!-- New table goes here -->
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="it-general-pm-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="it-general-pm-jobs" class='container-sm'hidden>
       <h3 class="table-name">General IT & Project Management</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -320,16 +336,16 @@
       </div>
 
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="security-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="security-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Security</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -422,16 +438,16 @@
         </table>
       </div>
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="dev-architecture-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="dev-architecture-jobs" class='container-sm'hidden>
       <h3 class="table-name">IT Development & Architecture</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -625,16 +641,16 @@
       </table>
       </div>
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="testing-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="testing-jobs" class='container-sm'hidden>
       <h3 class="table-name">IT Testing</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -710,15 +726,15 @@
       </table>
       </div>
 
-      <div id="solution-consulting-jobs" hidden>
+      <div id="solution-consulting-jobs" class='container-sm'hidden>
       <h3 class="table-name">Solution Consulting</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -762,16 +778,16 @@
       </table>
       </div>
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="design-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="design-jobs" class='container-sm'hidden>
       <h3 class="table-name">Design</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -892,16 +908,16 @@
       </table>
       </div>
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="digital-strategy-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="digital-strategy-jobs" class='container-sm'hidden>
       <h3 class="table-name">Digital Strategy</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -955,16 +971,16 @@
       </table>
       </div>
     <!-- A single table -->
-    <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="product-ops-jobs" hidden>
+    <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="product-ops-jobs" class='container-sm'hidden>
       <h3 class="table-name">Product & Operations</h3>
       <table>
         <!-- Table headline row -->
         <tr class='head-row'>
-          <th>Role</th>
-          <th>Junior</th>
-          <th>Experienced</th>
-          <th>Veteran</th>
+          <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
         </tr>
         <!-- A single role -->
         <tr>
@@ -1012,16 +1028,16 @@
       </div>
     </div>
     <div class="shenzhen">
-      <h2 hidden id="shenzhen">Shenzhen</h2>
-      <div id="data-ai-jobs" hidden>
+      <h2 class='container-sm'hidden id="shenzhen">Shenzhen</h2>
+      <div id="data-ai-jobs" class='container-sm'hidden>
         <h3 class="table-name">Data and Artificial Intelligence (AI) Jobs</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1065,16 +1081,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="dev-architecture-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="dev-architecture-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Development & Architecture</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1121,16 +1137,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="it-general-pm-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="it-general-pm-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT General & Project Management</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1156,16 +1172,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="security-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="security-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Security</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1184,16 +1200,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="testing-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="testing-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Testing</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1205,16 +1221,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="web-building-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="web-building-jobs" class='container-sm'hidden>
         <h3 class="table-name">Web Building</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1226,16 +1242,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="design-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="design-jobs" class='container-sm'hidden>
         <h3 class="table-name">Design</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1254,16 +1270,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="product-ops-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="product-ops-jobs" class='container-sm'hidden>
         <h3 class="table-name">Product & Operations</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1290,16 +1306,16 @@
       </div>
     </div>
     <div class="chengdu">
-      <h2 hidden id="chengdu">Chengdu</h2>
-      <div id="product-ops-jobs" hidden>
+      <h2 class='container-sm'hidden id="chengdu">Chengdu</h2>
+      <div id="product-ops-jobs" class='container-sm'hidden>
         <h3 class="table-name">Product & Operation</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1356,16 +1372,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="data-ai-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="data-ai-jobs" class='container-sm'hidden>
         <h3 class="table-name">Data & Artificial Intelligence (AI)</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1426,16 +1442,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="dev-architecture-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="dev-architecture-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Development & Architecture</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1475,16 +1491,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="it-general-pm-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="it-general-pm-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT General & Project Management</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1524,16 +1540,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="security-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="security-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Security</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1545,16 +1561,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="testing-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="testing-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Testing</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1580,16 +1596,16 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="solution-consulting-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="solution-consulting-jobs" class='container-sm'hidden>
         <h3 class="table-name">Solution Consulting</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1608,18 +1624,18 @@
         </table>
       </div>
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
       <!-- A single table -->
-      <!-- This `div` tag should always have id of 'what-kind-of-jobs  hiddencity' based on the Michael Page report -->
-      <div id="web-building-jobs" hidden>
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="web-building-jobs" class='container-sm'hidden>
         <h3 class="table-name">Web Building</h3>
         <table>
           <!-- Table headline row -->
           <tr class='head-row'>
-            <th>Role</th>
-            <th>Junior</th>
-            <th>Experienced</th>
-            <th>Veteran</th>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Experienced</span></th>
+            <th><span>Veteran</span></th>
           </tr>
           <!-- A single role -->
           <tr>
@@ -1633,7 +1649,43 @@
     </div>
 </div>
 <div class="footer">
-
+  <div class="prompt">
+    <h4>Want a higher salary in 2020?</h4>
+    <h4>Check out our courses to help you upgrade your skills!</h4>
+  </div>
+  <div class="bootcamp">
+    <h3 class="title">Data Science Bootcamp</h3>
+    <div class="card">
+      <h3 class="date">Jun 29 - Aug 28</h3>
+      <h5 class="schedule">9AM-6PM Monday to Friday (450 hours)</h5>
+      <p class="description">Learn Data Science from Python to advanced Machine Learning, get all the skills to join a Data Science team and boost your career.</p>
+      <div class="cta">LEARN MORE</div>
+    </div>
+  </div>
+  <div class="bootcamp">
+    <h3 class="title">Full Stack Bootcamp</h3>
+    <div class="card">
+      <h3 class="date">Jun 22 - Aug 22</h3>
+      <h5 class="schedule">9AM-6PM Monday to Friday (450 hours)</h5>
+      <p class="description">From programming basics to launching your first web app or WeChat Mini Program. Learn to build a product from scratch, backend and frontend.</p>
+      <div class="cta">LEARN MORE</div>
+    </div>
+  </div>
+  <div class="bootcamp">
+    <h3 class="title">Product Development Bootcamp</h3>
+    <h4 class="subtitle">(Part-time)</h4>
+    <div class="card">
+      <h3 class="date">Jun 20 - Aug 22</h3>
+      <h5 class="schedule">Tue, Thu evenings and Saturdays (100 hours)</h5>
+      <p class="description">Learn about the full cycle of how a product is built, and how to quickly prototype using available tools. Finish the bootcamp with your own Mini Program!</p>
+      <div class="cta">LEARN MORE</div>
+    </div>
+  </div>
+  <div class="remote">
+    <h3>ONSITE OR REMOTE</h3>
+    <h3 class="subtitle">Your choice!</h3>
+    <p class="description">If you are unable to join on-site bootcamp in our campus, you have the option to start remotely. For more details, please get in touch with our community manager.</p>
+  </div>
 </div>
 <script src='index.js'></script>
 </body>
