@@ -332,7 +332,7 @@ td+td {
   font-family: 'Helvetica'
 }
 
-.info .cta {
+.info a {
   width: 70%;
   text-align: center;
   margin: 1vh 0;
