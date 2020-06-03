@@ -8,6 +8,34 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  /*height: 100vh;*/
+}
+
+.code {
+  text-align: center;
+  margin-top: 10vh !important;
+}
+
+.code h2 {
+  font-size: 45px;
+}
+
+.code input {
+  height: 5vh;
+  font-size: 2vh;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.spinner-border {
+  margin-top: 10vh !important;
+  width: 10vw;
+  height: 10vw;
+}
+
+.code .oops {
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .logo {
@@ -162,7 +190,7 @@ td+td {
   width: 100vw;
   /*height: 500px;*/
   position: absolute;
-  top: 200;
+  top: 200vh;
   bottom: 0;
   left: 0;
   right: 0;

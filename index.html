@@ -17,7 +17,15 @@
     <div class="graphic">
       <img src="images/graphic.png">
     </div>
-    <div class="container-sm no-bg intro">
+    <div class="container-sm no-bg code">
+      <h2>📧 Your code will arrive by SMS shortly!</h2>
+      <input class="form-control form-control-lg" type="text" placeholder="Your code goes here">
+      <label for="input" class="text-danger oops" hidden>Oops, something went wrong, please try again 😰</label>
+    </div>
+    <div class="spinner-border text-danger" role="status" hidden>
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="container-sm no-bg intro" hidden>
       <h3>Hi <span id='user-name'>there</span>!</h3>
       <p>According to our super mega secret algorithm that borrows data from Michael Page, these are your salary possibilities:</p>
     </div>
@@ -1028,7 +1036,10 @@
       </div>
     </div>
     <div class="shenzhen">
-      <h2 class='container-sm'hidden id="shenzhen">Shenzhen</h2>
+      <div class='container-sm no-bg'hidden id="shenzhen">
+        <h2>Shenzhen</h2>
+        <h5>Base salary range for 12 months (RMB'000)</h5>
+      </div>
       <div id="data-ai-jobs" class='container-sm'hidden>
         <h3 class="table-name">Data and Artificial Intelligence (AI) Jobs</h3>
         <table>
@@ -1304,9 +1315,21 @@
           </tr>
         </table>
       </div>
+      <div id="digital-strategy-jobs" class='container-sm no-bg' hidden>
+        <h3>Sorry, we don't have info about <strong>Digital Strategy</strong> jobs in Shenzhen :(</h3>
+      </div>
+      <div id="solution-consulting-jobs" class='container-sm no-bg' hidden>
+        <h3>Sorry, we don't have info about <strong>Solution Consulting</strong> jobs in Shenzhen :(</h3>
+      </div>
+      <div id="solution-consulting-jobs" class='container-sm no-bg' hidden>
+        <h3>Sorry, we don't have info about <strong>Technical</strong> jobs in Shenzhen :(</h3>
+      </div>
     </div>
     <div class="chengdu">
-      <h2 class='container-sm'hidden id="chengdu">Chengdu</h2>
+      <div class='container-sm no-bg' hidden id="chengdu">
+        <h2>Chengdu</h2>
+        <h5>Base salary range for 12 months (RMB'000)</h5>
+      </div>
       <div id="product-ops-jobs" class='container-sm'hidden>
         <h3 class="table-name">Product & Operation</h3>
         <table>
@@ -1562,6 +1585,45 @@
       </div>
       <!-- A single table -->
       <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
+      <div id="design-jobs" class='container-sm'hidden>
+        <h3 class="table-name">Design</h3>
+        <table>
+          <!-- Table headline row -->
+          <tr class='head-row'>
+            <th><span>Role</span></th>
+            <th><span>Junior</span></th>
+            <th><span>Skilled</span></th>
+            <th><span>Veteran</span></th>
+          </tr>
+          <!-- A single role -->
+          <tr>
+            <td class='role manager'>User Experience/User Interface (UX/UI) Designer</td>
+            <td class='min'>87</td>
+            <td class='med'>117</td>
+            <td class='max'>147</td>
+          </tr>
+          <tr>
+            <td class='role manager'>Senior User Experience/User Interface (UX/UI) Designer</td>
+            <td class='min'>171</td>
+            <td class='med'>241</td>
+            <td class='max'>312</td>
+          </tr>
+          <tr>
+            <td class='role manager'>User Experience / User Interface (UX / UI) Director</td>
+            <td class='min'>240</td>
+            <td class='med'>360</td>
+            <td class='max'>480</td>
+          </tr>
+          <tr>
+            <td class='role manager'>Visual Creative Director</td>
+            <td class='min'>240</td>
+            <td class='med'>330</td>
+            <td class='max'>420</td>
+          </tr>
+        </table>
+      </div>
+      <!-- A single table -->
+      <!-- This `div` tag should always have id of 'what-kind-of-jobs  class='container-sm'hiddencity' based on the Michael Page report -->
       <div id="testing-jobs" class='container-sm'hidden>
         <h3 class="table-name">IT Testing</h3>
         <table>
@@ -1645,6 +1707,9 @@
             <td class='max'>550</td>
           </tr>
         </table>
+      </div>
+      <div class="digital-strategy-jobs" class='container-sm no-bg' hidden>
+        <h3>Sorry, we don't have info about <strong>Digital Strategy</strong> jobs in Chengdu :(</h3>
       </div>
     </div>
 </div>
