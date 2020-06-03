@@ -27,6 +27,19 @@ body {
   margin-top: 1vh;
 }
 
+.code .report-btn {
+  background-color: #fd1015;
+  color: white;
+  font-weight: bold;
+  margin-top: 1vh;
+  height: 5vh;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: .3rem;
+}
+
 .spinner-border {
   margin-top: 10vh !important;
   width: 10vw;
@@ -264,7 +277,7 @@ td+td {
   text-align: justify !important;
 }
 
-.card .cta {
+.cta {
   border-radius: 5px;
   background-color: #FD1015;
   padding: 10px 0px;
@@ -275,8 +288,8 @@ td+td {
 }
 /*Bootcamp cards styling*/
 
-/*Remote option section*/
-.remote {
+/*Info option section*/
+.info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,7 +298,7 @@ td+td {
   margin-top: 50px;
 }
 
-.remote h3 {
+.info h3 {
   font-size: 45px;
   text-align: center;
   width: 80%;
@@ -299,7 +312,7 @@ td+td {
   font-family: 'Circular Std', 'Helvetica';
 }
 
-.remote .subtitle {
+.info .subtitle {
   font-size: 40px;
   font-family: 'Circular Std', 'Helvetica';
   text-align: center;
@@ -310,7 +323,7 @@ td+td {
 
 }
 
-.remote .description {
+.info .description {
   margin-top: 10px;
   width: 100%;
   text-align: justify;
@@ -318,7 +331,13 @@ td+td {
   font-size: 30px;
   font-family: 'Helvetica'
 }
-/*Remote option section*/
+
+.info .cta {
+  width: 70%;
+  text-align: center;
+  margin: 1vh 0;
+}
+/*Info option section*/
 
 /*About section*/
 .about {

@@ -17,36 +17,39 @@ async function getData(entry_id) {
   document.querySelector('.code').hidden = true
   document.querySelector('.spinner-border').hidden = false
   let Submissions = new BaaS.TableObject('submissions')
+  let query = new BaaS.Query()
+  query.compare('serial', '=', entry_id)
 
   async function getRecord() {
     try {
-      // let queryString = window.location.search
-      // let entry_id = new URLSearchParams(queryString).get('id')
-      let res = await Submissions.get(entry_id)
+      let res = await Submissions.setQuery(query).find()
       // success
       return res
     } catch(err) {
       // error
-      return err
+      throw err
     }
   }
 
   let record = await getRecord()
-  if (record.status != 200) {
+  console.log(record)
+  if (record.data.objects.length == 0) {
     document.querySelector('input').value = ''
     document.querySelector('.code').hidden = false
     document.querySelector('.spinner-border').hidden = true
     document.querySelector('.oops').hidden = false
   } else {
-    let entry = record.data
+    let entry = record.data.objects[0]
     if (entry) {
       console.log(entry)
       document.querySelector('.intro').hidden = false
       document.querySelector('.spinner-border').hidden = true
       document.querySelector('.header').style.height = 'auto'
       document.querySelector('#user-name').innerText = entry.name
+      document.querySelector('.sharing').hidden = false
       entry.cities.forEach(city => {
         document.querySelector(`#${city.toLowerCase()}`).hidden = false
+        document.querySelector(`.info #${city.toLowerCase()}`).hidden = false
         entry.sectors.forEach(s => {
           table = document.querySelector(`.${city} #${SectorsMap[s]}`)
           if (table) {
@@ -70,9 +73,8 @@ window.addEventListener('scroll', e => {
 })
 
 // code input logic
-const input = document.querySelector('input')
-input.addEventListener('input', e => {
-  if (input.value.length == 24) {
-    getData(input.value)
-  }
+const button = document.querySelector('.report-btn')
+button.addEventListener('click', e => {
+  const input = document.querySelector('input')
+  getData(input.value)
 })
