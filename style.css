@@ -2,6 +2,40 @@ body {
   background-color: #62DDF5;
 }
 
+/*Quiz banner*/
+.quiz {
+  width: 100vw;
+  height: 6vh;
+  top: 0;
+  background-color: #fd1015;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quiz a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vh;
+  font-weight: bold;
+  font-family: 'Circular Std', 'Helvetica';
+}
+
+.icon {
+  display: inline-block;
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: 'Circular Std', 'Helvetica';
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%  {transform: translateY(-0.5vh);}
+  50%  {transform: translateY(0.5vh);}
+  100%  {transform: translateY(-0.5vh);}
+}
+/*Quiz banner*/
+
 /*Styling header*/
 .header {
   background-color: #62DDF5;

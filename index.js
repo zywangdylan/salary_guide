@@ -43,6 +43,9 @@ async function getData(entry_id) {
     if (entry) {
       console.log(entry)
       document.querySelector('.intro').hidden = false
+      document.querySelector('.quiz').hidden = true
+      document.querySelector('#fit').hidden = false
+      document.querySelector('#chat').hidden = false
       document.querySelector('.spinner-border').hidden = true
       document.querySelector('.header').style.height = 'auto'
       document.querySelector('#user-name').innerText = entry.name
@@ -62,12 +65,6 @@ async function getData(entry_id) {
     }
   }
 }
-
-// autofocus in input when loaded
-window.addEventListener('load', e => {
-  const input = document.querySelector('input')
-  input.focus()
-})
 
 
 // parallax effect
