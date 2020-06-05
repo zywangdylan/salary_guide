@@ -63,6 +63,11 @@ async function getData(entry_id) {
   }
 }
 
+// autofocus in input when loaded
+window.addEventListener('load', e => {
+  const input = document.querySelector('input')
+  input.focus()
+})
 
 
 // parallax effect
