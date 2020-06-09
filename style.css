@@ -4,8 +4,8 @@ body {
 
 /*Quiz banner*/
 .quiz {
-  width: 100vw;
-  height: 6vh;
+  height: 95px;
+  border-radius: .3rem;
   top: 0;
   background-color: #fd1015;
   text-align: center;
@@ -16,7 +16,7 @@ body {
 .quiz a {
   color: white;
   text-decoration: none;
-  font-size: 2.5vh;
+  font-size: 40px;
   font-weight: bold;
   font-family: 'Circular Std', 'Helvetica';
 }
@@ -45,29 +45,40 @@ body {
   /*height: 100vh;*/
 }
 
+/*/Code and survey cta interface*/
 .code {
   text-align: center;
-  margin-top: 10vh !important;
+  margin-top: 5vh !important;
 }
 
 .code h2 {
-  font-size: 45px;
+  font-size: 33px;
+  color: white;
+  font-family: 'Circular Std', 'Helvetica';
+  margin-top: 3vh;
+}
+
+.code .input {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .code input {
-  height: 5vh;
-  font-size: 2vh;
-  text-align: center;
-  margin-top: 1vh;
+  height: 95px;
+  font-size: 33px;
+  text-align: left;
+  width: 74%;
 }
 
 .code .report-btn {
+  flex-shrink: 0;
   background-color: #fd1015;
   color: white;
   font-weight: bold;
-  margin-top: 1vh;
-  height: 5vh;
-  font-size: 2vh;
+  width: 24%;
+  height: 95px;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -84,6 +95,7 @@ body {
   font-size: 35px;
   font-weight: bold;
 }
+/*/Code and survey cta interface*/
 
 .logo {
   text-align: center;
@@ -97,8 +109,10 @@ body {
 }
 
 .headline {
+  margin-top: 1vh;
   text-align: center;
   width: 70%;
+  color: white;
 }
 
 .headline h1 {
@@ -312,9 +326,10 @@ td+td {
 }
 
 .cta {
+  height: 95px;
   border-radius: 5px;
   background-color: #FD1015;
-  padding: 10px 0px;
+  padding: 25px 0px;
   color: white;
   font-size: 30px;
   font-weight: bold;
