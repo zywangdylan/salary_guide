@@ -239,8 +239,40 @@ td+td {
 }
 /*Table rows styling*/
 
-/*Footer styling*/
+/*Sharing section*/
+.sharing {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
+.sharing h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Circular Std', 'Helvetica';
+  margin-bottom: 0;
+  line-height: 95px;
+}
+
+.sharing button {
+  max-width: 40%;
+  border: none;
+  padding: 5px 35px;
+  background-color: #fd1015;
+  color: white;
+  font-weight: bold;
+  /*height: 95px;*/
+  font-size: 30px;
+  border-radius: .3rem;
+}
+
+.modal {
+  width: 100vw;
+
+}
+/*/Sharing section;*/
+
+/*Footer styling*/
 .footer {
   padding-top: 30px;
   position: relative;

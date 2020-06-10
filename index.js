@@ -80,3 +80,30 @@ button.addEventListener('click', e => {
   const input = document.querySelector('input')
   getData(input.value)
 })
+
+// if person coming from survey
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.get('survey') == 'true') {
+  document.querySelector('.quiz').remove()
+  document.querySelector('.code h2').style.fontWeight = 'bold'
+  document.querySelector('.code h2').innerText = "Ready to find out your future salary?"
+}
+
+
+
+// sharing the link
+const sharing_button = document.querySelector('.sharing button')
+const copyToClipboard = () => {
+  const el = document.createElement('textarea');
+  el.value = "https://salaries.wogengapp.cn/";
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  sharing_button.innerText = "Link copied, ready to send ✅"
+};
+sharing_button.addEventListener('click', copyToClipboard)
