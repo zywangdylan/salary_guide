@@ -43,7 +43,9 @@ async function getData(entry_id) {
     if (entry) {
       console.log(entry)
       document.querySelector('.intro').hidden = false
-      document.querySelector('.quiz').hidden = true
+      if (document.querySelector('.quiz')) {
+        document.querySelector('.quiz').hidden = true
+      }
       document.querySelector('#fit').hidden = false
       document.querySelector('#chat').hidden = false
       document.querySelector('.spinner-border').hidden = true
