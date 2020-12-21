@@ -1,5 +1,5 @@
 body {
-  background-color: #62DDF5;
+  background-color: #7E73FF;
 }
 
 /*Quiz banner*/
@@ -7,7 +7,7 @@ body {
   height: 95px;
   border-radius: .3rem;
   top: 0;
-  background-color: #fd1015;
+  background-color: #62DDF5;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
 
 /*Styling header*/
 .header {
-  background-color: #62DDF5;
+  background-color: #7E73FF;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@ body {
 
 .graphic img {
   height: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .intro h3 {
@@ -147,10 +147,10 @@ body {
 /*Styling header*/
 
 /*Styling tables*/
-.report {
+/*.report {
   background-color: #62DDF5;
   padding-bottom: 60px;
-}
+}*/
 
 .container-sm {
   max-width: 85vw !important;
@@ -288,7 +288,7 @@ td+td {
   left: 0;
   right: 0;
   z-index: -1;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('images/bg.jpg');
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('images/0.png');*/
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
@@ -309,13 +309,14 @@ td+td {
 
 .prompt h4 span {
   border-bottom: 5px solid #fd1015;
-  line-height: 150%
+  line-height: 150%;
+  color: white;
 }
 
 
 /*Bootcamp cards styling*/
 .bootcamp {
-  margin: 30px 15%;
+  margin: 90px 10%;
 }
 
 .bootcamp .title {
@@ -328,7 +329,7 @@ td+td {
 .bootcamp .subtitle {
   font-size: 30px;
   font-weight: bold;
-  color: gray;
+  color: white;
   text-align: center;
   font-family: 'Circular Std', 'Helvetica';
 }
@@ -380,7 +381,7 @@ td+td {
 }
 
 .info h3 {
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
   width: 80%;
   padding: 10px 20px;
