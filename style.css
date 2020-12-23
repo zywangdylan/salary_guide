@@ -4,10 +4,10 @@ body {
 
 /*Quiz banner*/
 .quiz {
-  height: 95px;
+  height: 120px;
   border-radius: .3rem;
   top: 0;
-  background-color: #62DDF5;
+  background-color: #fd1015;
   text-align: center;
   display: flex;
   flex-direction: column;
