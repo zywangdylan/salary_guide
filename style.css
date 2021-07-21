@@ -221,7 +221,7 @@ th span {
 /*Table rows styling*/
 td {
   font-size: 30px;
-  font-family: 'Helvetica'
+  font-family: 'Helvetica';
   line-height: 150%;
   padding: 12px 0px;
   text-align: left;
