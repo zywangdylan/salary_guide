@@ -2,6 +2,8 @@
 /* eslint-disable camelcase */
 import { updateSalaryData } from './fetchNotion'
 
+updateSalaryData(["WEB DEVELOPMENT/DESIGN", "CLOUD"])
+
 const BaaS = window.BaaS
 BaaS.init('69971365ede01a812c8a')
 
@@ -37,9 +39,7 @@ async function getData (entry_id) {
   }
 
   let record = await getRecord()
-  // record.data.objects[0].sectors
-  console.log(record.data.objects[0].sectors)
-  updateSalaryData(["WEB DEVELOPMENT/DESIGN", "CLOUD"])
+  // updateSalaryData(["WEB DEVELOPMENT/DESIGN", "CLOUD"])
 
   if (record.data.objects.length === 0) {
     document.querySelector('input').value = ''

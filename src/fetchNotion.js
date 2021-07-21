@@ -45,6 +45,7 @@ const fetchNotionSalaryTable = async (sectorArray) => {
 
 const updateSalaryData = async (sectorArray) => {
   const salaryData = await fetchNotionSalaryTable(sectorArray)
+  console.log(salaryData)
 }
 
 export { updateSalaryData }
